@@ -14,6 +14,9 @@ export default function Advice(){
        fetchData();
     },[])
     return (
-        <h1 className='text-[16px] text-[#c5e2e9] font-extrabold'>{ApiObj.advice}</h1>
+        <div>
+            <p className="text-[#53fea8]">Advice #{ApiObj.id}</p>
+            <h1 className='text-[16px] text-[#c5e2e9] font-extrabold'>{ApiObj.advice}</h1>
+        </div>
     )
 }
