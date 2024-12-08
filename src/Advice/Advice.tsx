@@ -23,11 +23,14 @@ export default function Advice() {
     console.log('i work');
   }, [clicked]);
   return (
-    <div className="flex flex-col justify-center items-center gap-[10px]">
+    <div className="flex flex-col justify-center items-center gap-[20px]">
       <p className="text-[#53fea8]">Advice #{ApiObj.id}</p>
       <h1 className="text-[16px] text-[#c5e2e9] font-extrabold">
         {ApiObj.advice}
       </h1>
+      <div>
+        <img src='src/assets/pattern-divider-desktop.svg'></img>
+      </div>
       <div className="w-[50px] h-[50px] rounded-[50%] bg-[#52fea9] flex justify-center items-center absolute bottom-[30%]">
         <img
           src="src/assets/icon-dice.svg"
